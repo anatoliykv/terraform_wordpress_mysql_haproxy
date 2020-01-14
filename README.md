@@ -11,3 +11,14 @@ unzip terraform_0.12.19_linux_amd64.zip
 sudo mv terraform /bin
 terraform -v
 ```
+Then run this command:
+
+```
+terraform init
+terraform plan (optional)
+terraform apply
+```
+To destroy this solution use this command:
+```
+terraform destroy
+```
