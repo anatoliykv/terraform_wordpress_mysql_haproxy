@@ -26,7 +26,7 @@ resource "aws_instance" "Server_Docker_WP_SQL" {
     private_ip             = "172.31.32.101"
     key_name               = "key_for_terraform"
     vpc_security_group_ids = [aws_security_group.my_webserver.id]
-    user_data =            = file("user_data.sh")
+    user_data =            = file("user_data_docker_wp_sql.sh")
   tags = {
     Name = "Server_Docker_WP_SQL Build by Terraform"
     Owner = "anatoliykv"
@@ -39,7 +39,7 @@ resource "aws_instance" "Server_Docker_WP_WP" {
     private_ip             = "172.31.32.102"
     key_name               = "key_for_terraform"
     vpc_security_group_ids = [aws_security_group.my_webserver.id]
-    #user_data =            = file("user_data.sh")
+    user_data =            = file("user_data_docker_wp_wp.sh")
   tags = {
     Name = "Server_Docker_WP_WP Build by Terraform"
     Owner = "anatoliykv"
