@@ -10,4 +10,4 @@ sudo usermod -aG docker $USER
 rm get-docker.sh
 #
 wget https://raw.githubusercontent.com/anatoliykv/terraform_wordpress_mysql_haproxy/master/install_wp_sql.yml
-docker-compose -f install_wp_sql.yml up -d
+sudo docker-compose -f install_wp_sql.yml up -d
