@@ -13,7 +13,7 @@ resource "aws_instance" "Server_Docker_HAProxy" {
     private_ip             = "172.31.32.100"
     key_name               = "key_for_terraform"
     vpc_security_group_ids = [aws_security_group.my_webserver.id]
-    user_data =            = file("https://raw.githubusercontent.com/anatoliykv/terraform_wordpress_mysql_haproxy/master/user_data_docker_haproxy.sh")
+    user_data =            = file("user_data_docker_haproxy.sh")
   tags = {
     Name = "Server_Docker_HAProxy Build by Terraform"
     Owner = "anatoliykv"
