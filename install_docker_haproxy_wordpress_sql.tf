@@ -1,12 +1,12 @@
-#-----------------------------------------
-#My terraform
-#Build Web Server during Bootstrap
+#-----------------------------------------------------------------------
+#Solution for installing wordpress using HAProxy in Docker via Terraform
+#-----------------------------------------------------------------------
 
 provider "aws" {
   region = "eu-central-1"
 }
 
-/*коментарий*/
+/*instance 1*/
 resource "aws_instance" "Server_Docker_HAProxy" {
     ami                    = "ami-0cc0a36f626a4fdf5" #Ubuntu Server 18.04 LTS
     instance_type          = "t2.micro"
