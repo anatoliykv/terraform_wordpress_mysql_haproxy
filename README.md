@@ -1,3 +1,4 @@
+![Иллюстрация к проекту](https://raw.githubusercontent.com/adv4000/terraform-lessons/master/terraform.jpg)
 # Solution Wordpress, MySQL, HAProxy in Docker containers deployed by Terraform to AWS
 
 For using this solution create Debian based Linux server and clone this repository:
